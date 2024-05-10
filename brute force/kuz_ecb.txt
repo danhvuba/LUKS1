@@ -1,0 +1,20 @@
+Version:       	1
+Cipher name:   	kuznyechik
+Cipher mode:   	ecb
+Hash spec:     	sha256
+Payload offset:	4096
+MK bits:       	256
+MK digest:     	c8 92 b6 5c ae c8 a7 15 7a 76 07 55 a0 1b 21 34 96 c9 99 10 
+MK salt:       	fe e4 8e 21 44 f0 d0 53 a2 e1 06 63 bd 07 76 9e 
+               	69 86 d1 7c 91 69 c5 1d 0d f5 5b 1c b5 ef 93 60 
+MK iterations: 	146285
+UUID:          	70e26fd9-47e2-403c-8c9a-e3982ddd0b14
+
+Key Slot 0: ENABLED
+	Iterations:         	2340570
+	Salt:               	78 a1 5b 73 a4 dc 6e a9 c2 56 90 aa a7 08 aa 14 
+	                      	9c 6a f0 43 6a 78 78 ac 8b f3 48 c7 d7 36 ff b1 
+	Key material offset:	8
+	AF stripes:            	4000
+data: 0 16384 crypt kuznyechik-ecb 5bcda39e527a44cc0603bfbf1fb92fda739fd38fde2f8e3a96e7bcadb094ae83 0 8:3 4096
+

@@ -1,0 +1,46 @@
+Команды
+1. Установить модули: 
+компилировать модули:
+	sudo make install
+
+загрузить модуль в ядро Linux:
+	sudo insmod kuznyechik.ko
+
+Проверка наличия модулей в ядре Linux:
+	sudo cat /proc/crypto | grep kuznyechik
+
+
+2. Шифрование: 
+Посмотреть список разделов: 
+	sudo fdisk -l
+
+Шифрование данных:
+	sudo cryptsetup luksFormat --type luks1 --cipher kuznyechik-cbc-plain --key-size 256 /dev/sda3
+
+Проверки результатов:
+	sudo cryptsetup luksDump /dev/sda3
+
+——или—	sudo hd /dev/sda3 -n 112
+
+
+Открытия раздела: 
+	sudo cryptsetup open /dev/sda3 data
+
+Обратите внимание, что при первом открытии раздела вам необходимо отформатировать его в формат ext4. 
+В следующий раз просто откройте и работайте нормально.
+ 
+
+Закрытия раздела:
+	sudo cryptsetup close data
+
+3.
+Проверки скорости:
+	sudo cryptsetup benchmark --cipher kuznyechik- cbc-plain --key-size 256
+
+Удаление модулей из ядра Linux:
+	sudo rmmod kuznyechik
+
+Очисление скомпилированных модулей в каталоге:
+	sudo make clean
+
+

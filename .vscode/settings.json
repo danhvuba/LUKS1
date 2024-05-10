@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "crypto.h": "c",
+        "stddef.h": "c",
+        "limits.h": "c",
+        "string.h": "c",
+        "kuznyechik.h": "c"
+    },
+    "cSpell.words": [
+        "CIPHERMODE",
+        "CIPHERNAME",
+        "HASHSPEC",
+        "HMACSIZE",
+        "LUKS",
+        "NUMKEYS",
+        "SALTSIZE"
+    ]
+}
